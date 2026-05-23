@@ -1,1 +1,49 @@
-# Docker_assigment
+# DevOps Assignment – Part A
+
+## Overview
+
+Terraform infrastructure deployment using LocalStack.
+
+Infrastructure created:
+
+- VPC (10.20.0.0/16)
+- 2 Public Subnets
+- Security Group
+- 2 EC2 Instances
+- S3 Bucket
+- Orphan EBS Volume
+
+## How to Run
+
+Start LocalStack:
+
+sudo docker run -d \
+--name localstack \
+-p 4566:4566 \
+localstack/localstack:3.8.1
+
+Run Terraform:
+
+cd terraform
+
+tflocal init
+
+tflocal apply -auto-approve
+
+## Outputs
+
+bucket_name
+subnet_ids
+vpc_id
+
+## Decisions & deviations
+
+SSH access kept configurable.
+
+S3 lifecycle disabled because LocalStack timed out.
+
+Reusable network module used.
+
+## AI usage disclosure
+
+Used AI assistance for explanation and debugging.# Docker_assigment
