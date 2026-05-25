@@ -47,3 +47,28 @@ Reusable network module used.
 ## AI usage disclosure
 
 Used AI assistance for explanation and debugging.# Docker_assigment
+
+
+## Part B – Cost Janitor
+
+Implemented:
+
+- Detect orphan EBS volumes
+- Generate report.json
+- Generate summary.md
+- Support dry-run execution
+- Skip deletion during analysis
+
+Execution:
+
+cd janitor
+
+python janitor.py --dry-run
+
+Sample Output:
+
+[
+ {
+   "type":"orphan-ebs"
+ }
+]
