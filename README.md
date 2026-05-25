@@ -72,3 +72,14 @@ Sample Output:
    "type":"orphan-ebs"
  }
 ]
+
+
+## Part C – CI/CD
+
+Implemented:
+
+- GitHub Actions
+- Terraform format check
+- Terraform validation
+- Python dependency installation
+- Cost Janitor dry-run
